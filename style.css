@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+[inline]{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 0 10px 0 10px;
+    padding: 9px;
+    font-size: medium;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px blue;
+    outline: 1px white solid;
+    background: #000;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 6px 6px 3px blue;
+    font-size: large;
+}
+
+@media (max-width:900px){
+    [inline]{
+        display: block;
+    }
+    button{
+        margin: 10px;
+    }
+}
+
+textarea:focus{
+    border: 2px solid rgb(0, 140, 255);
+    outline: none;
+}
